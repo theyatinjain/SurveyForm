@@ -15,19 +15,77 @@
         </div>
         <form action="#" class="form" id="survey-form">
             <div class="input-area">
-                <label for="name" class="text-label" id="name-label">Full Name</label>
-                <input type="text" class="text-input" id="name" required placeholder="Enter Your Name">
+                <label for="name" id="name-label">Full Name</label>
+                <input type="text" id="name" required placeholder="Enter Your Name">
             </div>
             <div class="input-area">
-                <label for="email" class="text-label" id="email-label">E-mail</label>
-                <input type="email" class="text-input" id="email" required placeholder="Enter Your E-mail">
+                <label for="email" id="email-label">E-mail</label>
+                <input type="email" id="email" required placeholder="Enter Your E-mail">
             </div>
             <div class="input-area">
-                <label for="number" class="text-label" id="number-label">Age</label>
-                <input type="number" class="text-input" id="number" required placeholder="Enter Your Age">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" required placeholder="Enter Your Age" min="1" max="200">
             </div>
+            <div class="reco-box">
+                <p class="reco-box-title">Would you recommend Post Malone to a friend?</p>
+                <div class="radio-box">
+                    <input type="radio" name="recommend" id="definitely" value="definitely" checked>
+                    <label for="definitely">Definitely</label>
+                </div>
+                <div class="radio-box">
+                    <input type="radio" name="recommend" id="maybe" value="maybe">
+                    <label for="maybe">Maybe</label>
+                </div>
+                <div class="radio-box">
+                    <input type="radio" name="recommend" id="nope" value="nope">
+                    <label for="nope">Nope</label>
+                </div>
+            </div>
+            <div class="genre-box">
+                <label for="dropdown" class="genre-box-title">Which genre of Post Malone you like most?</label>
+                <select name="genre" id="dropdown">
+                    <option value="select" disabled selected>Select an option</option>
+                    <option value="hip-hop">Hip Hop</option>
+                    <option value="country">Country</option>
+                    <option value="rb">R&B</option>
+                    <option value="grunge">Grunge</option>
+                </select>
+            </div>
+            <div class="song-box">
+                <div class="song-box-title">Which song of Post Malone you like most?</div>
+                <div class="check-box">
+                    <input type="checkbox" name="song" id="song1" value="goflex">
+                    <label for="song1">Go Flex</label>
+                </div>
+                <div class="check-box">
+                    <input type="checkbox" name="song" id="song2" value="goflex">
+                    <label for="song2">Circles</label>
+                </div>
+                <div class="check-box">
+                    <input type="checkbox" name="song" id="song3" value="goflex">
+                    <label for="song3">Rockstar</label>
+                </div>
+                <div class="check-box">
+                    <input type="checkbox" name="song" id="song4" value="goflex">
+                    <label for="song4">Congratulations</label>
+                </div>
+                <div class="check-box">
+                    <input type="checkbox" name="song" id="song5" value="goflex">
+                    <label for="song5">Saint-Tropez</label>
+                </div>
+                <div class="check-box">
+                    <input type="checkbox" name="song" id="song6" value="goflex">
+                    <label for="song6">White Iverson</label>
+                </div>
+            </div>
+            <div class="feedback-area">
+                <label for="feedback">Anything else you want to mention?</label>
+                <textarea name="feedback" id="feedback" wrap="hard"></textarea>
+            </div>
+            <input type="submit" value="Submit" id="submit">
         </form>
     </main>
+
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
