@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
+
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <main class="main">
+        <div class="heading-area">
+            <h1 class="heading" id="title">Post Malone survey form</h1>
+            <p class="heading-sub" id="description">Let us know what you like about <span>Post Malone</span>.</p>
+        </div>
+        <form action="#" class="form" id="survey-form">
+            <div class="input-area">
+                <label for="name" class="text-label" id="name-label">Full Name</label>
+                <input type="text" class="text-input" id="name" required placeholder="Enter Your Name">
+            </div>
+            <div class="input-area">
+                <label for="email" class="text-label" id="email-label">E-mail</label>
+                <input type="email" class="text-input" id="email" required placeholder="Enter Your E-mail">
+            </div>
+            <div class="input-area">
+                <label for="number" class="text-label" id="number-label">Age</label>
+                <input type="number" class="text-input" id="number" required placeholder="Enter Your Age">
+            </div>
+        </form>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
