@@ -7,45 +7,61 @@
 
     <!-- Custom CSS-->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive">
 </head>
 <body>
     <main class="main">
         <div class="heading-area">
-            <h1 class="heading" id="title">Post Malone survey form</h1>
-            <p class="heading-sub" id="description">Let us know what you like about <span>Post Malone</span>.</p>
+            <h1 class="heading" id="title">Post Malone</h1>
+            <p class="heading-sub" id="description">Let us know what you like about Post Malone.</p>
         </div>
         <form action="#" class="form" id="survey-form">
             <div class="input-area">
-                <label for="name" id="name-label">Full Name</label>
-                <input type="text" id="name" required placeholder="Enter Your Name">
+                <input type="text" id="name" required placeholder="&nbsp;" autocomplete="off">
+                <label class="label-box" for="name" id="name-label"><div class="label-content">Full Name</div></label>
             </div>
             <div class="input-area">
-                <label for="email" id="email-label">E-mail</label>
-                <input type="email" id="email" required placeholder="Enter Your E-mail">
+                <input type="email" id="email" required placeholder="&nbsp;" autocomplete="off">
+                <label class="label-box" for="email" id="email-label"><div class="label-content">E-Mail</div></label>
             </div>
             <div class="input-area">
-                <label for="number" id="number-label">Age</label>
-                <input type="number" id="number" required placeholder="Enter Your Age" min="1" max="200">
+                <input type="number" id="number" required placeholder="&nbsp;" min="1" max="9999999999" maxlength="3">
+                <label class="label-box" for="number" id="number-label"><div class="label-content">Age</div></label>
             </div>
             <div class="reco-box">
                 <p class="reco-box-title">Would you recommend Post Malone to a friend?</p>
                 <div class="radio-box">
                     <input type="radio" name="recommend" id="definitely" value="definitely" checked>
-                    <label for="definitely">Definitely</label>
+                    <label class="label-box" for="definitely">
+                        <span></span>
+                        <div class="label-content">
+                            Definitely
+                        </div>
+                    </label>
                 </div>
                 <div class="radio-box">
                     <input type="radio" name="recommend" id="maybe" value="maybe">
-                    <label for="maybe">Maybe</label>
+                    <label class="label-box" for="maybe">
+                        <span></span>
+                        <div class="label-content">
+                            Maybe
+                        </div>
+                    </label>
                 </div>
                 <div class="radio-box">
                     <input type="radio" name="recommend" id="nope" value="nope">
-                    <label for="nope">Nope</label>
+                    <label class="label-box" for="nope">
+                        <span></span>
+                        <div class="label-content">
+                            Nope
+                        </div>
+                    </label>
                 </div>
             </div>
             <div class="genre-box">
                 <label for="dropdown" class="genre-box-title">Which genre of Post Malone you like most?</label>
-                <select name="genre" id="dropdown">
-                    <option value="select" disabled selected>Select an option</option>
+                <select class="dropdown-box" name="genre" id="dropdown">
+                    <option class="option" value="selection" disabled selected>Select an option</option>
                     <option value="hip-hop">Hip Hop</option>
                     <option value="country">Country</option>
                     <option value="rb">R&B</option>
@@ -53,65 +69,98 @@
                 </select>
             </div>
             <div class="song-box">
-                <div class="song-box-title">Which song of Post Malone you like most?</div>
+                <div class="song-box-title">Which song of Post Malone you like most?<span>(check all the apply)</span></div>
                 <div class="check-box">
                     <input type="checkbox" name="song" id="song1" value="goflex">
-                    <label for="song1">Go Flex</label>
+                    <label class="label-box" for="song1">
+                        <span></span>
+                        <div class="label-content">
+                        Go Flex
+                        </div>
+                    </label>
                 </div>
                 <div class="check-box">
-                    <input type="checkbox" name="song" id="song2" value="goflex">
-                    <label for="song2">Circles</label>
+                    <input type="checkbox" name="song" id="song2" value="circles">
+                    <label class="label-box" for="song2">
+                        <span></span>
+                        <div class="label-content">
+                        Circles
+                        </div>
+                    </label>
                 </div>
                 <div class="check-box">
                     <input type="checkbox" name="song" id="song3" value="goflex">
-                    <label for="song3">Rockstar</label>
+                    <label class="label-box" for="song3">
+                        <span></span>
+                        <div class="label-content">
+                            Rockstar (feat. 21 Savage)
+                        </div>
+                    </label>
                 </div>
                 <div class="check-box">
                     <input type="checkbox" name="song" id="song4" value="goflex">
-                    <label for="song4">Congratulations</label>
+                    <label class="label-box" for="song4">
+                        <span></span>
+                        <div class="label-content">
+                        Congratulations (feat. Quavo)
+                        </div>
+                    </label>
                 </div>
                 <div class="check-box">
                     <input type="checkbox" name="song" id="song5" value="goflex">
-                    <label for="song5">Saint-Tropez</label>
+                    <label class="label-box" for="song5">
+                        <span></span>
+                        <div class="label-content">
+                            Saint-Tropez
+                        </div>
+                    </label>
                 </div>
                 <div class="check-box">
                     <input type="checkbox" name="song" id="song6" value="goflex">
-                    <label for="song6">White Iverson</label>
+                    <label class="label-box" for="song6">
+                        <span></span>
+                        <div class="label-content">
+                            White Iverson
+                        </div>
+                    </label>
                 </div>
             </div>
             <div class="feedback-area">
-                <label for="feedback">Anything else you want to mention?</label>
+                <label for="feedback">Anything else you want to tell?</label>
                 <textarea name="feedback" id="feedback" wrap="hard"></textarea>
             </div>
-            <input type="submit" value="Submit" id="submit">
+            <div class="button-box">
+                <input type="submit" value="Submit" id="submit">
+                <input type="reset">
+            </div>
         </form>
     </main>
 
-        <footer class="footer">
-            <div class="footer-top">
-                <div class="logo-img">
-                    <img src="" alt="Post Malone">
-                </div>
-                <div class="social">
-                    <h2>Post Malone</h2>
-                    <div class="social-links">
-                        <a href="">
-                            <ion-icon name="link"></ion-icon>
-                        </a>
-                        <a href="">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a>
-                        <a href="">
-                            <ion-icon name="radio"></ion-icon>
-                        </a>
-                        <a href="">
-                            <ion-icon name="logo-youtube"></ion-icon>
-                        </a>
-                    </div>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="logo-img">
+                <img src="" alt="Post Malone">
+            </div>
+            <div class="social">
+                <h2>Post Malone</h2>
+                <div class="social-links">
+                    <a href="">
+                        <ion-icon name="link"></ion-icon>
+                    </a>
+                    <a href="">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="">
+                        <ion-icon name="radio"></ion-icon>
+                    </a>
+                    <a href="">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </a>
                 </div>
             </div>
-            <div class="footer-webd"><p>Made with &hearts; by Yatin Jain</p></div>
-        </footer>
+        </div>
+        <div class="footer-webd"><p>Made with <ion-icon name="heart"></ion-icon> by Yatin Jain</p></div>
+    </footer>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
