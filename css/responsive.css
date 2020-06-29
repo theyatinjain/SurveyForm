@@ -9,6 +9,11 @@
         font-size: 12px;
     }
 
+    .input-area input:focus+.label-box .label-content,
+    .input-area input:valid+.label-box .label-content {
+        font-size: 0.9rem;
+    }
+
     .main .heading-area .heading {
         font-size: 5rem;
     }
@@ -29,7 +34,10 @@
 }
 
 @media screen and (max-width: 325px) {
-    html {font-size: 10px;}
+    html {
+        font-size: 10px;
+    }
+
     .form {
         padding: 2rem 2.15rem;
     }
