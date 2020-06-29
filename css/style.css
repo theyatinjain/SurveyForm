@@ -34,7 +34,7 @@
 
 .heading-area .heading {
   font-family: 'Simonetta', cursive;
-  font-size: 5rem;
+  font-size: 7rem;
   font-weight: 900;
   text-transform: capitalize;
   background: linear-gradient(to bottom, #c6ffdd, #fbd786, #f7797d);
@@ -45,7 +45,7 @@
 
 .heading-area .heading-sub {
   font-family: 'Simonetta', cursive;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   font-weight: 400;
   font-style: italic;
   justify-content: center;
@@ -82,10 +82,9 @@
   border: none;
   background: transparent;
   font-family: 'Lato', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   outline: none;
 }
-
 
 .input-area .label-box {
   position: absolute;
@@ -115,7 +114,7 @@
   left: 0;
   transition: all 0.4s ease-in-out;
   font-family: 'Lato', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   font-style: italic;
   color: #ffffff;
@@ -140,12 +139,12 @@
   position: relative;
   top: 0;
   left: 0;
-  margin: 1rem 0;
+  margin: 1.1rem 0;
 }
 
 .reco-box .reco-box-title {
   font-family: 'Lato', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   font-style: italic;
   margin-bottom: 0.2rem;
@@ -198,7 +197,7 @@
 .radio-box .label-box .label-content {
   display: flex;
   flex-direction: row;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
@@ -211,12 +210,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
   font-family: 'Lato', sans-serif;
 }
 
 .genre-box .genre-box-title {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   font-style: italic;
   margin-bottom: 0.3rem;
@@ -232,12 +231,12 @@
   font-family: 'Lato', sans-serif;
   text-transform: capitalize;
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .genre-box .dropdown-box option {
   color: #000000;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 400;
   background-color: rgba(107,107,131,0.8);
   padding: 0.1rem;
@@ -249,12 +248,15 @@
   position: relative;
   top: 0;
   left: 0;
-  margin: 1rem 0;
+  margin-bottom: 1.1rem;
 }
 
 .song-box .song-box-title {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
   font-family: 'Lato', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   font-style: italic;
   margin-bottom: 0.3rem;
@@ -263,7 +265,7 @@
 .song-box .song-box-title span {
   font-size: 0.9rem;
   text-transform: lowercase;
-  margin-left: 2px;
+  margin-left: 4px;
 }
 
 .song-box .check-box {
@@ -313,7 +315,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
@@ -333,7 +335,7 @@
 
 .feedback-area label {
   font-family: 'Lato', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   font-style: italic;
   margin-bottom: 0.3rem;
@@ -381,6 +383,8 @@
   background: linear-gradient(to right, rgba(170,75,107, 0.2), rgba(107,107,131, 0.2), rgba(59, 141, 153, 0.2));
 }
 
+/*-----------------FOOTER---------------------*/
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -396,7 +400,7 @@
   flex-wrap: nowrap;
   justify-content: center;
   padding: 1rem;
-  background: linear-gradient(to right, rgba(170,75,107, 1), rgba(107,107,131, 1), rgba(59, 141, 153, 1));
+  background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
   position: relative;
   color: #ffffff;
 }
@@ -410,8 +414,9 @@
 
 .footer-top .logo-img img {
   width: 100%;
-  max-height: 4rem;
-  max-width: 4rem;
+  max-height: 15rem;
+  max-width: 15rem;
+  align-items: center;
 }
 
 .footer-top .social {
@@ -424,7 +429,11 @@
 
 .footer-top .social h2 {
   font-family: 'Permanent Marker', cursive;
-  font-size: 3.5rem;
+  font-size: 3.8rem;
+  background-image: linear-gradient( 109.6deg,  rgba(14,11,56,1) 11.2%, rgba(239,37,37,1) 91.1% );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .footer-top .social .social-links {
@@ -438,10 +447,16 @@
 
 .social-links a ion-icon {
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  transition: all 0.5s ease;
 }
 
-/*----------------- SIGNATURE -------------------*/
+.social-links a ion-icon:hover,
+.social-links ion-icon:active {
+  color: #3c1053;
+}
+
+/*---- SIGNATURE ----*/
 
 .footer .footer-webd {
   background: #000000;
@@ -454,6 +469,10 @@
   color: #ffffff;
   font-size: 1.5rem;
   font-family: 'Rancho', cursive;
+  background: linear-gradient(to right, rgba(170,75,107, 1), rgba(107,107,131, 1), rgba(59, 141, 153, 1));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .footer .footer-webd p ion-icon{

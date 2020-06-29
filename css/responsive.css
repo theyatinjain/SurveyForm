@@ -1,0 +1,36 @@
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+
+    .main .heading-area .heading {
+        font-size: 5rem;
+    }
+
+    .form {
+        margin: 1rem;
+        margin-bottom: 2.5rem;
+        padding: 2.2rem 2.4rem;
+    }
+
+    .song-box .song-box-title span {
+        margin: 0;
+    }
+
+    .footer .footer-top {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    html {font-size: 10px;}
+    .form {
+        padding: 2rem 2.15rem;
+    }
+}
