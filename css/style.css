@@ -13,7 +13,7 @@
   top: 0;
   left: 0;
   background-color: #000000;
-  background: url('https://c4.wallpaperflare.com/wallpaper/303/1002/500/singers-post-malone-hd-wallpaper-preview.jpg'), linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
+  background: url('../images/bg-img.jpg'), linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
   background-blend-mode: overlay;
   background-attachment: scroll;
   background-position: center center;
